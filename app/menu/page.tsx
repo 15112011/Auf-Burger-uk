@@ -242,10 +242,10 @@ export default function MenuPage() {
                     <CardContent className="pt-0">
                       <div className="flex items-center justify-between">
                         <span className="text-3xl font-bold text-primary">${item.price}</span>
-                        <Link href="/order">
+                        <Link href={`/product/${item.id}`}>
                           <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
                             <ShoppingCart className="w-4 h-4 mr-2" />
-                            Add to Cart
+                            View Details
                           </Button>
                         </Link>
                       </div>

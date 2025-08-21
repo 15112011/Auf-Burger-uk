@@ -12,7 +12,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     { href: "/", icon: Home, label: "Home" },
     { href: "/menu", icon: Menu, label: "Menu" },
     { href: "/info", icon: Info, label: "About Us" },
-    { href: "/order", icon: ShoppingCart, label: "Order" },
+    { href: "/cart", icon: ShoppingCart, label: "Cart" }, // Changed from Order to Cart
   ]
 
   return (
@@ -34,7 +34,8 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
               <img
                 src="/auf-burger-logo.png"
                 alt="Auf Burger"
-                className="w-10 h-10 object-contain filter drop-shadow-lg"
+                className="w-12 h-12 object-contain"
+                style={{ filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.3))" }}
               />
               <span className="text-xl font-bold text-white">Auf Burger</span>
             </div>

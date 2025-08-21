@@ -26,7 +26,8 @@ export default function Navbar() {
               <img
                 src="/auf-burger-logo.png"
                 alt="Auf Burger Logo"
-                className="w-10 h-10 object-contain filter drop-shadow-lg"
+                className="w-12 h-12 object-contain"
+                style={{ filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.3))" }}
               />
               <span className="text-xl font-bold text-white hidden sm:block">Auf Burger</span>
             </Link>
@@ -42,8 +43,8 @@ export default function Navbar() {
               <Link href="/info" className="text-white hover:text-yellow-400 transition-colors font-medium">
                 About
               </Link>
-              <Link href="/order" className="text-white hover:text-yellow-400 transition-colors font-medium">
-                Order
+              <Link href="/cart" className="text-white hover:text-yellow-400 transition-colors font-medium">
+                Cart
               </Link>
             </div>
 
